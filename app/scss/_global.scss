@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #171919;
+}
+
+h3 {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+}
+
+.suptitle-left {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 15px;
+  padding-left: 103px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    background-color: #fff;
+    opacity: 0.5;
+    left: 0;
+    top: 50%;
+  }
+}
+
+.suptext-left {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    background-color: #fff;
+    opacity: 0.5;
+    left: 0;
+    top: 50%;
+  }
+}
+
+.title {
+  position: relative;
+  font-family: 'Fira Sans';
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 156px;
+  margin-left: 245px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #4AF6CD;
+    top: 40px;
+    right: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: -310px;
+    text-transform: uppercase;
+    font-family: 'Fira Sans';
+    font-weight: 800;
+    font-size: 200px;
+    line-height: 156px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.02;
+  }
+}
